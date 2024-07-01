@@ -1,2 +1,21 @@
-<p><%= params[:question] %></p>
-<p><%= @answer %></p>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stupid Coaching</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Stupid Coaching</h1>
+        <div class="quote me">
+            <p><%= params[:question] %></p>
+            <span class="author">—You</span>
+        </div>
+        <div class="quote coach">
+            <p><%= @answer %></p>
+            <span class="author">—Your coach</span>
+        </div>
+      <%= link_to "Ask a new question", ask_path %>
+  </div>
+</body>
+</html>
